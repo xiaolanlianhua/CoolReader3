@@ -513,8 +513,8 @@ void cr3androidFatalErrorHandler(int errorCode, const char * errorText )
 {
 	static char str[1001];
 	snprintf(str, 1000, "CoolReader Fatal Error #%d: %s", errorCode, errorText);
-	LOGE(str);
-	LOGASSERTFAILED(errorText, str);
+	//LOGE(str);
+	//LOGASSERTFAILED(errorText, str);
 }
 
 /// set fatal error handler
